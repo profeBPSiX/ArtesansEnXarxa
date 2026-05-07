@@ -1,0 +1,80 @@
+@use "../variables";
+
+.site-footer {
+  background: #f8f9fa;
+  border-top: 1px solid #ddd;
+  font-size: 0.95rem;
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  &__tagline {
+    color: #666;
+    margin-bottom: 0;
+  }
+
+
+  &__social {
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 1.4rem;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: variables.$color-primary;
+      transform: translateY(-2px) scale(1.1);
+    }
+  }
+
+    
+  &__bottom {
+    border-top: 1px solid #ddd;
+    font-size: 0.85rem;
+    color: #666;
+
+    p {
+      margin: 0;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  &__nav a {
+    color: #6B3E26;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.2s ease;
+  }
+  &__nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background-color: #6B3E26;
+      transition: width 0.3s ease;
+    }
+
+    &__nav a:hover::after {
+      width: 100%;
+    }
+
+    &__nav a:hover {
+      color: #5A2E1A;
+    }
+}

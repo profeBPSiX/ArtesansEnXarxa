@@ -1,0 +1,24 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import dependencies
+ */
+@use "dependencies";
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+@use "layouts/header";
+@use "layouts/footer";
+@use "layouts/home";
+@use "layouts/ponents";
+@use "layouts/article";
+@use "layouts/activitats";
+
+/**
+ * Do NOT include anything else in this file!
+ */

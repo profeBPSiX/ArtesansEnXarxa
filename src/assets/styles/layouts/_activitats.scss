@@ -1,0 +1,169 @@
+@use "../variables";
+
+.activities-page {
+  background-color: #f8f5f2;
+  color: #2b2b2b;
+}
+
+.activities-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 5rem clamp(1rem, 5vw, 5rem);
+  background:
+    linear-gradient(
+      135deg,
+      oklch(94% 0.025 75),
+      oklch(86% 0.055 55)
+    );
+
+  &__content {
+    max-width: 1000px;
+  }
+
+  &__kicker {
+    color: #6b3e26;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: #5a2e1a;
+    font-family: variables.$font-family-heading;
+    font-size: clamp(3rem, 9vw, 7rem);
+    line-height: 0.9;
+    margin: 0.5rem 0 1rem;
+  }
+
+  &__intro {
+    color: #444;
+    font-size: clamp(1.1rem, 2vw, 1.45rem);
+    line-height: 1.6;
+  }
+
+  &__date {
+    display: grid;
+    place-items: center;
+    min-width: 14rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: oklch(45% 0.09 45);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgba(43, 43, 43, 0.18);
+
+    span {
+      display: block;
+      font-family: variables.$font-family-heading;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1;
+    }
+
+    small {
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.activities {
+  padding: 4rem clamp(1rem, 5vw, 5rem);
+
+  &__header {
+    max-width: 760px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+
+  &__kicker {
+    color: #6b3e26;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: #5a2e1a;
+    font-family: variables.$font-family-heading;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1;
+  }
+
+  &__list {
+    container-type: inline-size;
+    container-name: workshops;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: 1.5rem;
+    max-width: 1180px;
+    margin-inline: auto;
+  }
+}
+
+.workshop-card {
+  padding: clamp(1.25rem, 4cqi, 2rem);
+  border: 1px solid rgba(107, 62, 38, 0.16);
+  border-radius: 1.25rem;
+  background-color: oklch(98% 0.01 70);
+  box-shadow: 0 0.75rem 2rem rgba(43, 43, 43, 0.07);
+
+  &__tag {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background-color: oklch(45% 0.09 45);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  &__title {
+    color: #5a2e1a;
+    font-family: variables.$font-family-heading;
+    font-size: clamp(1.5rem, 5cqi, 2.2rem);
+    line-height: 1.05;
+  }
+
+  &__text {
+    color: #444;
+    line-height: 1.6;
+  }
+
+  &__meta {
+    margin-top: 1.25rem;
+    color: #6b3e26;
+    font-weight: 700;
+  }
+}
+
+@container workshops (min-width: 780px) {
+  .workshop-card--featured {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .activities-hero {
+    min-height: 50svh;
+    flex-direction: column;
+
+    &__date {
+      min-width: 7.5rem;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__intro {
+      text-align: center;
+    }
+  }
+}

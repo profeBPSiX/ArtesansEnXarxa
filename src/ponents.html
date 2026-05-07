@@ -1,0 +1,367 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+
+    <link rel="icon" type="image/png" href="./assets/images/icon-logo.png">
+    <title>Artesans en xarxa - Ponents</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="speakers-page">
+      <section class="speakers" aria-labelledby="speakers-title">
+
+        <header class="speakers__header">
+          <p class="speakers__kicker">Veus de l’ofici</p>
+
+          <h1 id="speakers-title" class="speakers__title">
+            Ponents
+          </h1>
+
+          <p class="speakers__intro">
+            Professionals de diferents disciplines comparteixen processos,
+            tècniques i experiències al voltant de l’artesania contemporània.
+          </p>
+        </header>
+
+        <div class="speakers__list">
+
+          <article class="card speaker-card">
+            <img
+              src="./assets/images/ponent-1.png"
+              class="card-img-top speaker-card__image"
+              alt="Retrat de Laia Font"
+            >
+
+            <div class="card-body speaker-card__body">
+              <span class="badge text-bg-primary mb-2">Ceràmica</span>
+
+              <h2 class="card-title h5 speaker-card__title">Laia Font</h2>
+
+              <p class="card-text speaker-card__text">
+                Ceramista especialitzada en peces funcionals i processos de baixa temperatura.
+              </p>
+
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalLaiaFont"
+              >
+                Més informació
+              </button>
+            </div>
+          </article>
+
+          <article class="card speaker-card">
+            <img
+              src="./assets/images/ponent-1.png"
+              class="card-img-top speaker-card__image"
+              alt="Retrat de Biel Roca"
+            >
+
+            <div class="card-body speaker-card__body">
+              <span class="badge text-bg-primary mb-2">Fusta</span>
+
+              <h2 class="card-title h5 speaker-card__title">Biel Roca</h2>
+
+              <p class="card-text speaker-card__text">
+                Fuster artesà dedicat al disseny d’objectes quotidians amb materials recuperats.
+              </p>
+
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalBielRoca"
+              >
+                Més informació
+              </button>
+            </div>
+          </article>
+
+          <article class="card speaker-card">
+            <img
+              src="./assets/images/ponent-1.png"
+              class="card-img-top speaker-card__image"
+              alt="Retrat de Nora Vidal"
+            >
+
+            <div class="card-body speaker-card__body">
+              <span class="badge text-bg-primary mb-2">Tèxtil</span>
+
+              <h2 class="card-title h5 speaker-card__title">Nora Vidal</h2>
+
+              <p class="card-text speaker-card__text">
+                Dissenyadora tèxtil centrada en fibres naturals, tintes vegetals i processos lents.
+              </p>
+
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalNoraVidal"
+              >
+                Més informació
+              </button>
+            </div>
+          </article>
+
+          <article class="card speaker-card">
+            <img
+              src="./assets/images/ponent-1.png"
+              class="card-img-top speaker-card__image"
+              alt="Retrat de Marc Solé"
+            >
+
+            <div class="card-body speaker-card__body">
+              <span class="badge text-bg-primary mb-2">Joieria</span>
+
+              <h2 class="card-title h5 speaker-card__title">Marc Solé</h2>
+
+              <p class="card-text speaker-card__text">
+                Joier contemporani que treballa amb metall reciclat i formes inspirades en la natura.
+              </p>
+
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalMarcSole"
+              >
+                Més informació
+              </button>
+            </div>
+          </article>
+
+          <article class="card speaker-card">
+            <img
+              src="./assets/images/ponent-1.png"
+              class="card-img-top speaker-card__image"
+              alt="Retrat d'Aina Martí"
+            >
+
+            <div class="card-body speaker-card__body">
+              <span class="badge text-bg-primary mb-2">Paper</span>
+
+              <h2 class="card-title h5 speaker-card__title">Aina Martí</h2>
+
+              <p class="card-text speaker-card__text">
+                Enquadernadora artesanal especialitzada en llibretes úniques i restauració de paper.
+              </p>
+
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalAinaMarti"
+              >
+                Més informació
+              </button>
+            </div>
+          </article>
+
+          <article class="card speaker-card">
+            <img
+              src="./assets/images/ponent-1.png"
+              class="card-img-top speaker-card__image"
+              alt="Retrat de Pol Ferrer"
+            >
+
+            <div class="card-body speaker-card__body">
+              <span class="badge text-bg-primary mb-2">Vidre</span>
+
+              <h2 class="card-title h5 speaker-card__title">Pol Ferrer</h2>
+
+              <p class="card-text speaker-card__text">
+                Artesà del vidre que combina tècniques tradicionals amb aplicacions contemporànies.
+              </p>
+
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPolFerrer"
+              >
+                Més informació
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="speakers-info" aria-labelledby="speakers-info-title">
+        <h2 id="speakers-info-title" class="speakers-info__title">
+          Informació de les ponències
+        </h2>
+
+        <div class="accordion speakers-info__accordion" id="speakersAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Com s’organitzen les sessions?
+              </button>
+            </h3>
+
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#speakersAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  Les jornades es distribueixen en blocs de matí i tarda, combinant diferents formats per afavorir l’aprenentatge i la participació activa.
+                </p>
+
+                <ul>
+                  <li><strong>Ponències:</strong> presentacions breus on els artesans comparteixen trajectòries, processos i inspiracions.</li>
+                  <li><strong>Demostracions:</strong> sessions pràctiques en directe on es poden observar tècniques i eines.</li>
+                  <li><strong>Espais de debat:</strong> converses obertes amb el públic per fomentar l’intercanvi d’idees.</li>
+                </ul>
+
+                <p>
+                  Cada sessió està pensada per ser accessible tant a professionals com a persones amb interès inicial en el sector.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Cal inscripció prèvia?
+              </button>
+            </h3>
+
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#speakersAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  L’accés a les ponències és lliure fins a completar l’aforament, però algunes activitats requereixen inscripció prèvia.
+                </p>
+
+                <ul>
+                  <li><strong>Tallers pràctics:</strong> places limitades per garantir una experiència de qualitat.</li>
+                  <li><strong>Sessions especialitzades:</strong> adreçades a professionals o persones amb coneixements previs.</li>
+                </ul>
+
+                <p>
+                  Es recomana consultar el programa amb antelació i reservar plaça en aquelles activitats amb més demanda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Secció de modals -->
+    <div class="modal fade" id="modalLaiaFont" tabindex="-1" aria-labelledby="modalLaiaFontTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="modalLaiaFontTitle">Laia Font</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tancar"></button>
+          </div>
+          <div class="modal-body">
+            Laia Font presentarà una demostració sobre ceràmica funcional i processos manuals aplicats a peces d’ús quotidià.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalBielRoca" tabindex="-1" aria-labelledby="modalBielRocaTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="modalBielRocaTitle">Biel Roca</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tancar"></button>
+          </div>
+          <div class="modal-body">
+            Biel Roca explicarà com reaprofitar fusta local per crear objectes duradors, útils i respectuosos amb l’entorn.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalNoraVidal" tabindex="-1" aria-labelledby="modalNoraVidalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="modalNoraVidalTitle">Nora Vidal</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tancar"></button>
+          </div>
+          <div class="modal-body">
+            Nora Vidal compartirà tècniques de tint natural i reflexions sobre sostenibilitat en el disseny tèxtil.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalMarcSole" tabindex="-1" aria-labelledby="modalMarcSoleTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="modalMarcSoleTitle">Marc Solé</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tancar"></button>
+          </div>
+          <div class="modal-body">
+            Marc Solé presentarà el seu procés creatiu en joieria contemporània a partir de materials reciclats.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalAinaMarti" tabindex="-1" aria-labelledby="modalAinaMartiTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="modalAinaMartiTitle">Aina Martí</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tancar"></button>
+          </div>
+          <div class="modal-body">
+            Aina Martí mostrarà diferents tècniques d’enquadernació artesanal i restauració de paper.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalPolFerrer" tabindex="-1" aria-labelledby="modalPolFerrerTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="modalPolFerrerTitle">Pol Ferrer</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tancar"></button>
+          </div>
+          <div class="modal-body">
+            Pol Ferrer explicarà com el treball artesanal del vidre pot dialogar amb formes i necessitats contemporànies.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
