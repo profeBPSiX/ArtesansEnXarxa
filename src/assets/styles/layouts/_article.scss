@@ -1,18 +1,10 @@
 @use "../variables";
 
-/* =========================
-   PAGE BASE
-========================= */
-
 .article-page {
-  background-color: #f8f5f2;
+  background-color: variables.$color-bg;
   padding: 3rem 1rem;
   text-align: justify;
 }
-
-/* =========================
-   ARTICLE CONTAINER
-========================= */
 
 .article {
   container-type: inline-size;
@@ -20,18 +12,14 @@
 
   max-width: 860px;
   margin: 0 auto;
-  color: #2b2b2b;
+  color: variables.$color-text;
 
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
-  /* =========================
-   HEADER
-  ========================= */
-
-  &__kicker {
-    color: #6b3e26;
+  &__context-title {
+    color: variables.$color-secondary;
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -40,7 +28,7 @@
 
   &__title {
     text-align: initial;
-    color: #5a2e1a;
+    color: variables.$color-primary-dark;
     font-family: variables.$font-family-heading;
     font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.1;
@@ -48,14 +36,14 @@
   }
 
   &__meta {
-    color: #777;
+    color: variables.$color-muted;
     font-size: 0.9rem;
   }
 
   &__lead {
     font-size: 1.25rem;
     line-height: 1.6;
-    color: #333;
+    color: variables.$color-muted;
   }
 
   &__section {
@@ -78,13 +66,13 @@
 
     figcaption {
       font-size: 0.85rem;
-      color: #666;
+      color: variables.$color-muted;
       text-align: center;
     }
   }
 
   &__figure:has(figcaption) {
-    border-bottom: 2px solid rgba(107, 62, 38, 0.2);
+    border-bottom: 2px solid variables.$color-border;
     padding-bottom: 0.75rem;
   }
 
@@ -95,8 +83,8 @@
   &__section--quote blockquote {
     margin: 0;
     padding: 1.5rem;
-    border-left: 5px solid #6b3e26;
-    background-color: rgba(107, 62, 38, 0.08);
+    border-left: 5px solid variables.$color-secondary;
+    background-color: variables.$color-border;
     font-style: italic;
     font-size: 1.2rem;
     line-height: 1.5;
@@ -109,16 +97,14 @@
   &__footer {
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(107, 62, 38, 0.2);
+    border-top: 1px solid variables.$color-border;
     font-size: 0.9rem;
-    color: #666;
+    color: variables.$color-muted;
   }
-
-
 }
 
 .article :is(h2, h3) {
-  color: #5a2e1a;
+  color: variables.$color-primary-dark;
   font-family: variables.$font-family-heading;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
@@ -130,7 +116,6 @@
   flex-direction: column;
   gap: 0.5rem;
 }
-
 
 @container article (max-width: 600px) {
   .article__title {

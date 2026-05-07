@@ -1,8 +1,8 @@
 @use "../variables";
 
 .site-footer {
-  background: #f8f9fa;
-  border-top: 1px solid #ddd;
+  background: variables.$color-bg;
+  border-top: 1px solid variables.$color-border;
   font-size: 0.95rem;
 
   &__title {
@@ -12,7 +12,7 @@
   }
 
   &__tagline {
-    color: #666;
+    color: variables.$color-muted;
     margin-bottom: 0;
   }
 
@@ -37,9 +37,9 @@
 
     
   &__bottom {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid variables.$color-border;
     font-size: 0.85rem;
-    color: #666;
+    color: variables.$color-muted;
 
     p {
       margin: 0;
@@ -53,7 +53,7 @@
   }
 
   &__nav a {
-    color: #6B3E26;
+    color: variables.$color-secondary;
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -66,7 +66,7 @@
       bottom: -4px;
       width: 0%;
       height: 2px;
-      background-color: #6B3E26;
+      background-color: variables.$color-secondary;
       transition: width 0.3s ease;
     }
 
@@ -75,6 +75,6 @@
     }
 
     &__nav a:hover {
-      color: #5A2E1A;
+      color: variables.$color-primary-dark;
     }
 }

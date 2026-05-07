@@ -1,8 +1,8 @@
 @use "../variables";
 
 .speakers-page {
-  background-color: #f8f5f2;
-  color: #2b2b2b;
+  background-color: variables.$color-bg;
+  color: variables.$color-text;
 }
 
 .speakers {
@@ -14,8 +14,8 @@
     text-align: center;
   }
 
-  &__kicker {
-    color: #6b3e26;
+  &__context-title {
+    color: variables.$color-secondary;
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -23,7 +23,7 @@
   }
 
   &__title {
-    color: #5a2e1a;
+    color: variables.$color-primary-dark;
     font-family: variables.$font-family-heading;
     font-size: clamp(3rem, 8vw, 6rem);
     line-height: 0.9;
@@ -31,7 +31,7 @@
   }
 
   &__intro {
-    color: #555;
+    color: variables.$color-muted;
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.6;
   }
@@ -53,10 +53,10 @@
   flex: 1 1 280px;
   max-width: 360px;
   overflow: hidden;
-  border: 1px solid rgba(107, 62, 38, 0.18);
+  border: 1px solid variables.$color-border;
   border-radius: 1.25rem;
-  background-color: #fff;
-  box-shadow: 0 0.75rem 2rem rgba(43, 43, 43, 0.08);
+  background-color: variables.$color-white;
+  box-shadow: 0 0.75rem 2rem variables.$color-shadow;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
@@ -64,8 +64,8 @@
 
   &:hover {
     transform: translateY(-4px);
-    border-color: rgba(107, 62, 38, 0.35);
-    box-shadow: 0 1rem 2.5rem rgba(43, 43, 43, 0.12);
+    border-color: variables.$color-border;
+    box-shadow: 0 1rem 2.5rem variables.$color-shadow;
   }
 
   &__image {
@@ -83,14 +83,14 @@
   }
 
   &__title {
-    color: #5a2e1a;
+    color: variables.$color-primary-dark;
     font-family: variables.$font-family-heading;
     font-size: 1.45rem;
     margin-bottom: 0.6rem;
   }
 
   &__text {
-    color: #555;
+    color: variables.$color-muted;
     line-height: 1.55;
     margin-bottom: 1.25rem;
   }
@@ -124,7 +124,7 @@
   padding: 0 1rem;
 
   &__title {
-    color: #5a2e1a;
+    color: variables.$color-primary-dark;
     font-family: variables.$font-family-heading;
     font-size: clamp(2rem, 5vw, 3.25rem);
     margin-bottom: 1.5rem;
@@ -132,30 +132,30 @@
   }
 
   &__accordion {
-    border: 1px solid rgba(107, 62, 38, 0.18);
+    border: 1px solid variables.$color-border;
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 0.75rem 2rem rgba(43, 43, 43, 0.06);
+    box-shadow: 0 0.75rem 2rem variables.$color-shadow;
   }
 
   .accordion-button {
-    color: #5a2e1a;
+    color: variables.$color-primary-dark;
     font-weight: 700;
 
     &:not(.collapsed) {
-      background-color: rgba(107, 62, 38, 0.1);
-      color: #5a2e1a;
+      background-color: variables.$color-border;
+      color: variables.$color-primary-dark;
     }
 
     &:focus {
-      border-color: rgba(107, 62, 38, 0.35);
-      box-shadow: 0 0 0 0.2rem rgba(107, 62, 38, 0.18);
+      border-color: variables.$color-border-dark;
+      box-shadow: 0 0 0 0.2rem variables.$color-border;
     }
   }
 }
 
 .modal-content {
-  border: 1px solid rgba(107, 62, 38, 0.18);
+  border: 1px solid variables.$color-border;
   border-radius: 1rem;
 }
 
@@ -164,7 +164,7 @@
 }
 
 .modal-title {
-  color: #5a2e1a;
+  color: variables.$color-primary-dark;
   font-family: variables.$font-family-heading;
 }
 

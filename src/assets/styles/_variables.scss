@@ -5,15 +5,22 @@ $font-family-heading: 'Fraunces', Georgia, serif;
 
 $color-primary: #8B5E3C;
 $color-primary-dark: #5a2e1a;
-$color-secondary: #b35c2e;
+$color-secondary: #6b3e26;
 $color-accent: #8a6f3e;
 
 $color-bg: #f8f5f2;
-$color-surface: #fffaf6;
+$color-bg-overlay: rgba(248, 245, 242, 0.88);
+
+$color-surface: #fcf6ef;
+
 $color-border: rgba(107, 62, 38, 0.18);
+$color-border-dark: rgba(107, 62, 38, 0.35);
+
+
+$color-shadow: rgba(43, 43, 43, 0.12); 
 
 $color-text: #2b2b2b;
-$color-muted: #666;
+$color-muted: #555;
 $color-white: #ffffff;
 
 $mqMinWidth: 420px;
