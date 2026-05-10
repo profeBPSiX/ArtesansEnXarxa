@@ -12,7 +12,7 @@ import * as bootstrap from 'bootstrap';
  */
 
 // Actualització de l'enllaç actiu del navbar del header+footer
-
+console.log("Test")
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 // Seleccionem tots els enllaços del menú de navegació.
 const navLinks = document.querySelectorAll('.site-header__link');
