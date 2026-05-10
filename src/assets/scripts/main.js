@@ -13,11 +13,8 @@ import * as bootstrap from 'bootstrap';
 
 // Recupera la pàgina actual i normalitza el nom.
 const currentPath = window.location.pathname;
-const currentPage = currentPath
-  .split('/')
-  .pop()
-  .replace('.html', '') || 'index';
-  
+const currentPage = currentPath === '/' ? 'index' : currentPath.split('/').pop().replace('.html', '');
+
 // Seleccionem tots els enllaços del menú de navegació.
 const navLinks = document.querySelectorAll('.site-header__link');
 
