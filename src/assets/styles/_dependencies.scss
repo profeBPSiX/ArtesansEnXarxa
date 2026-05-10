@@ -5,6 +5,6 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
-@import "fonts";
+@use "fonts";
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
 @import "bootstrap/scss/bootstrap";
